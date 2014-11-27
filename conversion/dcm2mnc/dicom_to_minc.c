@@ -2130,7 +2130,7 @@ dimension_sort_function(const void *v1, const void *v2)
 int
 prot_find_string(Acr_Element elem_ptr, const char *name_str, char *value)
 {
-    static const char prot_head[] = "### ASCCONV BEGIN ###";
+    static const char prot_head[] = "### ASCCONV BEGIN";
     long cur_offset,tmp_offset;
     long max_offset;
     char *field_ptr;
@@ -2180,7 +2180,7 @@ prot_find_string(Acr_Element elem_ptr, const char *name_str, char *value)
 static char *
 dump_protocol_text(Acr_Element elem_ptr)
 {
-    const char prot_head[] = "### ASCCONV BEGIN ###";
+    const char prot_head[] = "### ASCCONV BEGIN";
     const char prot_tail[] = "### ASCCONV END ###";
     char *output = malloc(elem_ptr->data_length);
     int prot_found = FALSE;
