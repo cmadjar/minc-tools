@@ -17,7 +17,7 @@
 > form:
 >     VariableName = VariableValue
 > The begining of the block is delineated by the line
->       ### ASCCONV BEGIN ###
+>       ### ASCCONV BEGIN
 > The end of the block is delineated by the line
 >       ### ASCCONV END ###
 >

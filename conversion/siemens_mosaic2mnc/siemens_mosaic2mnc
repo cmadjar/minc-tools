@@ -93,7 +93,7 @@ print STDOUT " +++ Seeking ASCCONV header in $infile\n" if !$opt{quiet};
 open(FH, "<$infile");
 do {
    chomp($buf = <FH>);   
-   } until (index($buf, "### ASCCONV BEGIN ###") != -1);
+   } until (index($buf, "### ASCCONV BEGIN") != -1);
 
 # copy the header into a hash
 print STDOUT " +++ Getting ASCCONV elements: " if !$opt{quiet};

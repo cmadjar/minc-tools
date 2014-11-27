@@ -915,7 +915,7 @@ public char *prot_find_string(Acr_Element Protocol, char *Field) {
   char FieldValue[512];
   char *Output = calloc(512,sizeof(char)); // return value
 
-  char ProtHead[] = "### ASCCONV BEGIN ###";
+  char ProtHead[] = "### ASCCONV BEGIN";
   long prot_offset;
   char *field_ptr;
   char DefaultValue = '0';
@@ -966,7 +966,7 @@ public char *prot_find_string(Acr_Element Protocol, char *Field) {
 
 public char *dump_protocol_text(Acr_Element Protocol) {
 
-  char ProtHead[] = "### ASCCONV BEGIN ###";
+  char ProtHead[] = "### ASCCONV BEGIN";
   char ProtTail[] = "### ASCCONV END ###";
   char *Output = calloc(Protocol->data_length,sizeof(char)); // return value
   int  prot_found = FALSE;
